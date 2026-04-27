@@ -1,0 +1,35 @@
+{
+    "notices": [
+      {
+        "title": "Important Announcement on Admissions",
+        "date": "2024-11-13",
+        "isNew": true,
+        "link": "#"
+      },
+      {
+        "title": "Notice Regarding Exam Schedule",
+        "date": "2024-11-12",
+        "isNew": false,
+        "link": "#"
+      },
+      {
+        "title": "Holiday Announcement for National Day",
+        "date": "2024-11-11",
+        "isNew": false,
+        "link": "#"
+      },
+      {
+        "title": "Application Deadline for Scholarships",
+        "date": "2024-11-10",
+        "isNew": false,
+        "link": "#"
+      },
+      {
+        "title": "New Faculty Joining Announcement",
+        "date": "2024-11-09",
+        "isNew": false,
+        "link": "#"
+      }
+    ]
+  }
+  

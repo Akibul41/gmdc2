@@ -1,0 +1,137 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for all notices */
+.notice-container {
+    width: 100%;
+    max-width: 90%; /* Maximum width for desktop */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+/* Individual notice link */
+.notices {
+    background-color: #fff;
+    border: calc(1vw + 5px) solid transparent; /* Invisible border */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+/* Change background color when hovering */
+.notices:hover {
+    background-color: #eaf3fc;
+}
+
+/* Styling for the link */
+.notices a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the "NEW" tag */
+.new {
+    color: #d9534f;
+    background-color: #f2dede;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    animation: blink 1s step-end infinite;
+}
+
+/* Animation for blinking text */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and larger screens */
+@media (max-width: 1024px) {
+    .notice-container {
+        padding: 15px;
+    }
+
+    .notices a {
+        font-size: 16px;
+    }
+
+    .new {
+        font-size: 13px;
+    }
+}
+
+/* For mobile screens (less than 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .notice-container {
+        padding: 10px;
+    }
+
+    .notices {
+        padding: 8px;
+    }
+
+    .notices a {
+        font-size: 14px;
+    }
+
+    .new {
+        font-size: 12px;
+    }
+} 
+
+/* For very small mobile screens (less than 480px) */
+@media (max-width: 480px) {
+    .notice-container {
+        padding: 5px;
+    }
+
+    .notices {
+        padding: 5px;
+    }
+
+    .notices a {
+        font-size: 12px;
+    }
+
+    .new {
+        font-size: 11px;
+    }
+}

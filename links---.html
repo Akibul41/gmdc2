@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Useful Links</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+
+
+    h1 {
+      text-align: center;
+      color: var(--text-dark);
+      margin-bottom: 30px;
+      font-size: 2.4rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 0px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: var(--text-dark);
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .buttons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .btn {
+      background-color: #999;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+      cursor: pointer;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      transform: translateY(-3px);
+      box-shadow: var(--hover-shadow);
+      filter: brightness(1.05);
+      outline: none;
+    }
+
+    .btn i {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    /* Button Colors */
+    .btn-academic-1 { background-color: #e74c3c; }
+    .btn-academic-2 { background-color: #3498db; }
+    .btn-academic-3 { background-color: #2ecc71; }
+    .btn-academic-4 { background-color: #f39c12; }
+    .btn-academic-5 { background-color: #9b59b6; }
+    .btn-academic-6 { background-color: #1abc9c; }
+    .btn-academic-7 { background-color: #d35400; }
+    .btn-academic-8 { background-color: #34495e; }
+
+    .btn-nonacademic-1 { background-color: #27ae60; }
+    .btn-nonacademic-2 { background-color: #2980b9; }
+    .btn-nonacademic-3 { background-color: #8e44ad; }
+    .btn-nonacademic-4 { background-color: #c0392b; }
+
+    .btn-admin-1 { background-color: #16a085; }
+    .btn-admin-2 { background-color: #e67e22; }
+    .btn-admin-3 { background-color: #8e44ad; }
+    .btn-admin-4 { background-color: #2c3e50; }
+    .btn-admin-5 { background-color: #c0392b; }
+    .btn-admin-6 { background-color: #7f8c8d; }
+    .btn-admin-7 { background-color: #d35400; }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .ima{
+        display: none;
+      }
+
+      section h2 {
+        font-size: 1.25rem;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Useful Links</h1>
+  <main>
+    
+    <!-- Academic -->
+    <section>
+      <h2><i class="fas fa-graduation-cap"></i> Academic</h2>
+      <div class="buttons-grid">
+        <a href="dept.html" class="btn btn-academic-1" aria-label="Department"><i class="fas fa-building"></i> Department</a>
+        <a href="#" class="btn btn-academic-2" aria-label="Non-teaching Staff"><i class="fas fa-users"></i> Staff</a>
+        <a href="#" class="btn btn-academic-3" aria-label="Student Corner"><i class="fas fa-user-graduate"></i> Student</a>
+        <a href="#" class="btn btn-academic-4" aria-label="College Hostel"><i class="fas fa-hotel"></i> Hostel</a>
+        <a href="#" class="btn btn-academic-5" aria-label="Playground"><i class="fas fa-running"></i> Playground</a>
+        <a href="#" class="btn btn-academic-6" aria-label="Courses"><i class="fas fa-book-open"></i> Courses</a>
+        <a href="#" class="btn btn-academic-7" aria-label="College Gallery"><i class="fas fa-camera"></i> Gallery</a>
+        <a href="#" class="btn btn-academic-8" aria-label="Sub-committees"><i class="fas fa-clipboard-list"></i> Committees</a>
+      </div>
+    </section>
+
+    <!-- Non-Academic -->
+    <section>
+      <h2><i class="fas fa-umbrella-beach"></i> Non-Academic</h2>
+      <div class="buttons-grid">
+        <a href="#" class="btn btn-nonacademic-1" aria-label="Events"><i class="fas fa-calendar-alt"></i> Events</a>
+        <a href="#" class="btn btn-nonacademic-2" aria-label="Transportation"><i class="fas fa-bus"></i> Transport</a>
+        <a href="#" class="btn btn-nonacademic-3" aria-label="Cafeteria"><i class="fas fa-utensils"></i> Cafeteria</a>
+        <a href="#" class="btn btn-nonacademic-4" aria-label="Health Center"><i class="fas fa-first-aid"></i> Health</a>
+      </div>
+    </section>
+
+    <!-- Administrative -->
+    <section>
+      <h2><i class="fas fa-landmark"></i> Administrative</h2>
+      <div class="buttons-grid">
+        <a href="#" class="btn btn-admin-1" aria-label="DHE"><i class="fas fa-university"></i> DHE</a>
+        <a href="#" class="btn btn-admin-2" aria-label="BARPETA DC OFFICE"><i class="fas fa-file-contract"></i> DC Office</a>
+        <a href="#" class="btn btn-admin-3" aria-label="GAUHATI UNIVERSITY"><i class="fas fa-graduation-cap"></i> GU</a>
+        <a href="#" class="btn btn-admin-4" aria-label="BHATTADEV UNIVERSITY"><i class="fas fa-school"></i> BU</a>
+        <a href="#" class="btn btn-admin-5" aria-label="GOVT OF ASSAM"><i class="fas fa-flag"></i> Assam</a>
+        <a href="#" class="btn btn-admin-6" aria-label="UGC"><i class="fas fa-globe"></i> UGC</a>
+        <a href="#" class="btn btn-admin-7" aria-label="AICTE"><i class="fas fa-atom"></i> AICTE</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

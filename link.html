@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgb(221 233 187);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .image-container {
+            display: flex;
+            width: 200px;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        
+        .image-container img {
+            width: 180px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid rgb(75, 57, 57);
+        }
+        
+        .image-container p {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .sub-container {
+            width: 100%;
+        }
+        
+        .sub-container h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .btn {
+            width: 150px;
+            height: 80px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn i {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        
+        /* Academic Button Colors */
+        .btn-academic-1 { background-color: #e74c3c; }
+        .btn-academic-2 { background-color: #3498db; }
+        .btn-academic-3 { background-color: #2ecc71; }
+        .btn-academic-4 { background-color: #f39c12; }
+        .btn-academic-5 { background-color: #9b59b6; }
+        .btn-academic-6 { background-color: #1abc9c; }
+        .btn-academic-7 { background-color: #d35400; }
+        .btn-academic-8 { background-color: #34495e; }
+        
+        /* Non-Academic Button Colors */
+        .btn-nonacademic-1 { background-color: #27ae60; }
+        .btn-nonacademic-2 { background-color: #2980b9; }
+        .btn-nonacademic-3 { background-color: #8e44ad; }
+        .btn-nonacademic-4 { background-color: #c0392b; }
+        
+        /* Administrative Button Colors */
+        .btn-admin-1 { background-color: #16a085; }
+        .btn-admin-2 { background-color: #e67e22; }
+        .btn-admin-3 { background-color: #8e44ad; }
+        .btn-admin-4 { background-color: #2c3e50; }
+        .btn-admin-5 { background-color: #c0392b; }
+        .btn-admin-6 { background-color: #7f8c8d; }
+        .btn-admin-7 { background-color: #d35400; }
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+            
+            .image-container {
+                width: 100%;
+                text-align: center;
+
+            }
+            
+            .image-container img {
+                margin: 20 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Useful Links</h1>
+    
+    <div class="main-container">
+        <!-- Image Container (Left Side) -->
+        <div class="image-container">
+            <img src="images/book.jpg" alt="College Photo">
+            <p>"Education is the most powerful weapon which you can use to change the world"</p>
+            <p>- Nelson Mandela</p>
+        </div>
+        
+        <!-- Content Container (Right Side) -->
+        <div class="content-container">
+            <!-- Academic Section -->
+            <div class="sub-container">
+                <h2><i class="fas fa-graduation-cap"></i> Academic</h2>
+                <div class="buttons-grid">
+                    <a href="#" class="btn btn-academic-1">
+                        <i class="fas fa-building"></i>
+                        Department
+                    </a>
+                    <a href="#" class="btn btn-academic-2">
+                        <i class="fas fa-users"></i>
+                        Non-teaching Staff
+                    </a>
+                    <a href="#" class="btn btn-academic-3">
+                        <i class="fas fa-user-graduate"></i>
+                        Student Corner
+                    </a>
+                    <a href="#" class="btn btn-academic-4">
+                        <i class="fas fa-hotel"></i>
+                        College Hostel
+                    </a>
+                    <a href="#" class="btn btn-academic-5">
+                        <i class="fas fa-running"></i>
+                        Playground
+                    </a>
+                    <a href="#" class="btn btn-academic-6">
+                        <i class="fas fa-book-open"></i>
+                        Courses
+                    </a>
+                    <a href="#" class="btn btn-academic-7">
+                        <i class="fas fa-camera"></i>
+                        College Gallery
+                    </a>
+                    <a href="#" class="btn btn-academic-8">
+                        <i class="fas fa-clipboard-list"></i>
+                        Sub-committees
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Non-Academic Section -->
+            <div class="sub-container">
+                <h2><i class="fas fa-umbrella-beach"></i> Non-Academic</h2>
+                <div class="buttons-grid">
+                    <a href="#" class="btn btn-nonacademic-1">
+                        <i class="fas fa-calendar-alt"></i>
+                        Events
+                    </a>
+                    <a href="#" class="btn btn-nonacademic-2">
+                        <i class="fas fa-bus"></i>
+                        Transportation
+                    </a>
+                    <a href="#" class="btn btn-nonacademic-3">
+                        <i class="fas fa-utensils"></i>
+                        Cafeteria
+                    </a>
+                    <a href="#" class="btn btn-nonacademic-4">
+                        <i class="fas fa-first-aid"></i>
+                        Health Center
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Administrative Section -->
+            <div class="sub-container">
+                <h2><i class="fas fa-landmark"></i> Administrative</h2>
+                <div class="buttons-grid">
+                    <a href="#" class="btn btn-admin-1">
+                        <i class="fas fa-university"></i>
+                        DHE
+                    </a>
+                    <a href="#" class="btn btn-admin-2">
+                        <i class="fas fa-file-contract"></i>
+                        BARPETA DC OFFICE
+                    </a>
+                    <a href="#" class="btn btn-admin-3">
+                        <i class="fas fa-graduation-cap"></i>
+                        GAUHATI UNIVERSITY
+                    </a>
+                    <a href="#" class="btn btn-admin-4">
+                        <i class="fas fa-school"></i>
+                        BHATTADEV UNIVERSITY
+                    </a>
+                    <a href="#" class="btn btn-admin-5">
+                        <i class="fas fa-flag"></i>
+                        GOVT OF ASSAM
+                    </a>
+                    <a href="#" class="btn btn-admin-6">
+                        <i class="fas fa-globe"></i>
+                        UGC
+                    </a>
+                    <a href="#" class="btn btn-admin-7">
+                        <i class="fas fa-atom"></i>
+                        AICTE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

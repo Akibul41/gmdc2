@@ -1,0 +1,110 @@
+/* General Footer Styling */
+.footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: -webkit-box; /* Fallback for older Chrome versions */
+    display: -ms-flexbox; /* Fallback for IE */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px; /* Ensures elements adjust on smaller screens */
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-map {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 150px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-copyright {
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center; /* Center content for smaller screens */
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  
+    .footer-map {
+      width: 100%; /* Ensures the map image scales on small devices */
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-section h3 {
+      font-size: 1.2em;
+    }
+  
+    .footer-section p, 
+    .footer-section ul li {
+      font-size: 0.9em;
+    }
+  
+    .footer-map {
+      max-width: 100%;
+      height: auto; /* Maintains aspect ratio */
+    }
+  }
+  

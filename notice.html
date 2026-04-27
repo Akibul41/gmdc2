@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/notices-style.css">
+    <link rel="stylesheet" href="src/fstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap"
+        rel="stylesheet">
+    <script src="src/scripts.js" defer></script>
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <div id="navbar"></div>
+    <div class="notice-container" id="noticeContainer">
+        <!-- Notices will be dynamically inserted here -->
+    </div>
+
+
+    <div id="footer"></div>
+
+
+    <script>
+        // Fetch the JSON file containing notices
+        fetch('v/notices.json')
+            .then(response => response.json())
+            .then(data => {
+                const notices = data.notices;
+                const noticeContainer = document.getElementById('noticeContainer');
+
+                // Loop through the notices and create HTML for each notice
+                notices.forEach(notice => {
+                    const noticeDiv = document.createElement('div');
+                    noticeDiv.classList.add('notices'); // Changed from 'notice' to 'notices'
+                    noticeDiv.innerHTML = `
+                <a href="${notice.link}">
+                    ${notice.title}
+                    ${notice.isNew ? '<span class="new">NEW</span>' : ''}
+                </a>
+            `;
+                    noticeContainer.appendChild(noticeDiv);
+                });
+            })
+            .catch(error => {
+                console.error("Error loading the notices:", error);
+            });
+
+    </script>
+</body>
+
+</html>

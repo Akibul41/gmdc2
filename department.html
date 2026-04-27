@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Departments - Govt Model Degree College, Baghbar</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.department {
+margin-bottom: 40px;
+}
+
+.dept-title {
+background-color: #0077cc;
+color: white;
+padding: 15px;
+font-size: 20px;
+border-radius: 6px 6px 0 0;
+}
+
+.staff-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+background: white;
+padding: 20px;
+border: 1px solid #ccc;
+border-top: none;
+border-radius: 0 0 8px 8px;
+}
+
+.card {
+position: relative;
+width: 220px;
+height: 240px;
+background-color: #0077cc;
+color: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+animation: fadeIn 1s ease forwards;
+flex-grow: 1;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.card-content {
+position: absolute;
+z-index: 2;
+transition: transform 0.5s ease;
+}
+
+.card-content h2 {
+font-size: 16px;
+margin: 0;
+}
+
+.card-content p {
+margin: 4px 0;
+font-size: 13px;
+}
+
+.card img {
+position: absolute;
+top: 0; left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 1;
+filter: blur(3px);
+transition: filter 0.5s ease;
+}
+
+.card:hover img,
+.card:active img {
+filter: blur(0);
+}
+
+.card:hover .card-content,
+.card:active .card-content {
+transform: translateY(200%);
+}
+
+.vacant {
+background: #ccc !important;
+color: #555 !important;
+}
+
+.vacant img {
+display: none;
+}
+
+@media (max-width: 600px) {
+.card {
+width: 100%;
+}
+}
+
+  </style>
+</head>
+<body>
+  <h1>College Departments - Govt Model Degree College, Baghbar</h1>  <!-- AUDIO --><audio id="hoverSound" src="https://assets.mixkit.co/sfx/preview/mixkit-quick-win-video-game-notification-269.mp3"></audio>
+
+  <script>
+    const hoverSound = document.getElementById('hoverSound');
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          hoverSound.currentTime = 0;
+          hoverSound.play();
+        });
+      });
+    });
+  </script>  <!-- DEPARTMENTS -->  <div class="department">
+<div class="dept-title">English</div>
+<div class="staff-container">
+  <div class="card">
+    <div class="card-content"><h2>Dr. Priya Dutta</h2><p>Associate Professor</p></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+  </div>
+  <div class="card">
+    <div class="card-content"><h2>Mr. Rohit Das</h2><p>Assistant Professor</p></div>
+    <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="">
+  </div>
+  <div class="card vacant">
+    <div class="card-content"><h2>Vacant</h2><p>Position Open</p></div>
+  </div>
+</div>
+```
+
+  </div>  <div class="department">
+    <div class="dept-title">Assamese</div>
+    <div class="staff-container">
+      <div class="card">
+        <div class="card-content"><h2>Dr. Kalpana Nath</h2><p>Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Mr. Biplab Boro</h2><p>Assistant Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="">
+      </div>
+      <div class="card vacant">
+        <div class="card-content"><h2>Vacant</h2><p>Position Open</p></div>
+      </div>
+    </div>
+  </div>  <div class="department">
+    <div class="dept-title">Political Science</div>
+    <div class="staff-container">
+      <div class="card">
+        <div class="card-content"><h2>Dr. Anjali Devi</h2><p>Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/women/31.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Mr. Ravi Kumar</h2><p>Associate Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Ms. Ruma Das</h2><p>Assistant Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="">
+      </div>
+    </div>
+  </div>  <div class="department">
+    <div class="dept-title">Education</div>
+    <div class="staff-container">
+      <div class="card">
+        <div class="card-content"><h2>Mr. Ajay Paul</h2><p>Associate Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Ms. Sneha Saikia</h2><p>Assistant Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/women/54.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Mr. Dipak Das</h2><p>Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="">
+      </div>
+    </div>
+  </div>  <div class="department">
+    <div class="dept-title">History</div>
+    <div class="staff-container">
+      <div class="card">
+        <div class="card-content"><h2>Dr. Maya Goswami</h2><p>Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Mr. Nayan Boro</h2><p>Associate Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Ms. Richa Deka</h2><p>Assistant Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+      </div>
+    </div>
+  </div>  <div class="department">
+    <div class="dept-title">Economics</div>
+    <div class="staff-container">
+      <div class="card">
+        <div class="card-content"><h2>Dr. Jiban Kalita</h2><p>Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Ms. Anushka Devi</h2><p>Assistant Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="">
+      </div>
+      <div class="card">
+        <div class="card-content"><h2>Mr. Raju Barman</h2><p>Associate Professor</p></div>
+        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="">
+      </div>
+    </div>
+  </div>  <div class="department">
+    <div class="dept-title">Non-Teaching</div>
+    <div class="staff-container">
+      <div class="card" style="flex-grow:0;">
+        <div class="card-content"><h2>Akibul Hassan</h2><p>Junior Assistant</p></div>
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
+      </div>
+    </div>
+  </div></body>
+</html>
